@@ -1,0 +1,303 @@
+:root{
+  --bg-color-1: #29b3e7;
+  --bg-color-2:#7b6ff9;
+  --bg-color-3: #24cddb;
+  --primary-color: #000;
+  --secondary-color: #fff;
+  --visited-link: #1114cc;
+  --font-weight: 400;
+  --primary-font-size: 24px;
+  --h1-font-size: 36px;
+  --bold-font-weight: 700;
+  --link-hover-font-size: 28px;
+  --animation-color-1: #edc655;
+  --animation-color-2:#fcffad;
+  --animation-color-3: #fff;
+  --bg-animation-color-1:#add8e6;
+  --bg-animation-color-2:#57eaf6;
+  --bg-animation-color-3:#00008b;
+
+
+}
+
+body{
+  font-family: 'Stylish', sans-serif;
+  font-weight: var(--font-weight);
+  font-size: var(--primary-font-size);
+  line-height: 1.6;
+  color: var(--primary-color);
+
+}
+
+.body__index {
+  background-color: var(--bg-color-1);
+}
+
+.body__about {
+  background-color: var(--bg-color-2);
+}
+
+.body__contact {
+  background-color: var(--bg-color-3);
+}
+
+.body__work{
+  background-color: var(--bg-color-2);
+}
+
+h1 {
+  font-size: var(--h1-font-size);
+  font-weight: var(--bold-font-weight);
+  text-align: center;
+  text-decoration: underline;
+
+}
+
+.p__profile{
+  text-align: center;
+}
+
+a {
+  color: var(--primary-color);
+  transition: .4s opacity, .4s font-size;
+}
+
+a:visited {
+  /* visited link */
+  color: var(--visited-link);
+}
+
+a:hover, a:focus {
+  /* No underlining when hovering over a link */
+  text-decoration: none;
+  color: var(--secondary-color);
+  opacity: .8;
+  font-size: var(--link-hover-font-size);
+  }
+
+a:active {
+  /* selected link */
+  color: var(--primary-color);
+}
+
+button,
+.button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+  background-color: var(--bg-color-3);
+  color: var(--primary-color);
+  text-decoration: none;
+  /* adds spacing to the button */
+  padding: 10px;
+  border-radius: 3px;
+  /* give the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  border-bottom: 2px solid rgba(0,0,0,0.3);
+  transition: 0.9s opacity, .9s font-size;
+}
+
+button:hover, button:focus,
+.button:hover, .button:focus {
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  /* reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  font-size: 28px;
+
+}
+
+.navigation-list__item--active {
+  text-decoration: none;
+}
+
+.contact-information{
+  text-align: center;
+}
+
+#form__button {
+  background-color: var(--bg-color-2);
+  font-family: inherit;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+#form__button:hover, #form__button:focus {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.profile__portrait{
+  float: left;
+  width: 250px;
+  margin-right: 40px;
+  border-radius: 50%;
+}
+
+table, th, td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+table{
+  margin: 20px auto;
+}
+.page__footer{
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.profile{
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page-header {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  border-bottom: double;
+}
+
+.page-header__item {
+  flex: 0 1 200px;
+}
+
+.page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.navigation-list{
+  list-style-type: none;
+}
+
+.navigation-list li{
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.project-list__item{
+  display: inline-block;
+  width: 33%;
+
+}
+.project-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.project-list__item{
+  background-color: var(--bg-color-3);
+  padding: 10px;
+  width: auto;
+  text-align: center;
+  border-style: solid;
+  border-width: 5px;
+}
+
+.page-header__logo{
+  border-style: double;
+  border-width: 5px;
+  border-color: var(--primary-color);
+}
+
+@media all and (max-width: 750px){
+  /* shared code */
+}
+
+@media all and (max-width: 500px){
+  .project-list{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 750px){
+  .project-list{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media all and (max-width:750px){
+  .project-list{
+    grid-gap: 10px;
+  }
+  h1{
+    font-size: 22px;
+  }
+}
+
+.about{
+  text-align: center;
+}
+
+.berlin-illustration{
+  display: block;
+  margin: 0 auto;
+  border: 10px solid var(--secondary-color);
+}
+
+@keyframes color-change{
+  0%{
+    fill: var(--animation-color-1);
+  }
+  50%{
+    fill: var(--animation-color-2);
+  }
+  100%{
+    fill: var(--animation-color-3);
+  }
+}
+
+.sun{
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move{
+  from{
+    transform: translate(0,50px);
+  }
+  to{
+    transform:translate(200px,50px);
+  }
+}
+
+.cloud-front{
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse{
+  from{
+    transform:translate(446px,48px);
+  }
+  to{
+    transform:translate(100px,48px);
+  }
+}
+
+.cloud-back{
+  animation: 30s cloud-move-reverse infinite alternate linear;
+}
+
+@keyframes background-color-change{
+  0%{
+    background-color:var(--bg-animation-color-1);
+  }
+  50%{
+    background-color: var(--bg-animation-color-2);
+  }
+  100%{
+    background-color:var(--bg-animation-color-3);
+  }
+}
+
+.berlin-illustration{
+  animation: 4s background-color-change infinite alternate linear;
+}
