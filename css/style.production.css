@@ -282,13 +282,13 @@ table{
 
 @keyframes color-change{
   0%{
-    color: #edc655;
+    fill: #edc655;
   }
   50%{
-    color: #fcffad;
+    fill: #fcffad;
   }
   100%{
-    color: #fff;
+    fill: #fff;
   }
 }
 
