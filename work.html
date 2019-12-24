@@ -1,80 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Julie Sneed Work</title>
-    <link rel="shortcut icon" href="img/bellfavicon.ico">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Stylish&display=swap" rel="stylesheet">    <link rel="stylesheet" type="text/css" href="css/style.production.css">
-  </head>
-  <body class="body__work">
-    <header class="page-header"> <!--logo and navigation -->
-      <img class="page-header__item page-header__logo" src="img/purplelogo.png" alt="Personal logo of Julie Sneed, a text logo that consists of my name">
-      <nav class="navigation-list page-header__item">
-        <ul role="menubar" class="navigation-list">
-          <li role="presentation">
-            <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
-          </li>
-          <li role="presentation">
-            <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
-          </li>
-          <li role="presentation">
-            <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active"> My Work </a>
-          </li>
-          <li role="presentation">
-            <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header> <!-- end logo and navigation -->
 
-    <!-- Main Content -->
-    <section>
-      <h1>Work</h1>
-      <div class="project-list"> <!--PROJECT LIST GRID -->
-        <div class="project-list__item"><!--Grid item 1 -->
-          <h2>Example 1</h2>
-          <p>Example 1 description</p>
-          <a href="#" class="project-list__link">Link to Example 1</a>
-        </div> <!--end grid item 1 -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Julie Sneed Work</title>
+  <link rel="shortcut icon" href="img/bellfavicon.ico">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Stylish&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.production.css">
+</head>
 
-        <div class="project-list__item"><!-- grid item 2 -->
-          <h2>Example 2</h2>
-          <p>Example 2 description</p>
-          <a href="#" class="project-list__link">Link to Example 2</a>
-        </div> <!-- end grid item 2 -->
+<body class="body__work">
+  <header class="page-header">
+    <!--logo and navigation -->
+    <img class="page-header__item page-header__logo" src="img/purplelogo.png"
+      alt="Personal logo of Julie Sneed, a text logo that consists of my name">
+    <nav class="navigation-list page-header__item">
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation">
+          <a href="index.html" role="menuitem"
+            class="navigation-list__item">Home</a>
+        </li>
+        <li role="presentation">
+          <a href="about.html" role="menuitem"
+            class="navigation-list__item">About Me</a>
+        </li>
+        <li role="presentation">
+          <a href="work.html" role="menuitem"
+            class="navigation-list__item navigation-list__item--active"> My Work
+          </a>
+        </li>
+        <li role="presentation">
+          <a href="contact.html" role="menuitem"
+            class="navigation-list__item">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header> <!-- end logo and navigation -->
 
-        <div class="project-list__item"><!-- grid item 3 -->
-          <h2>Example 3</h2>
-          <p>Example 3 description</p>
-          <a href="#" class="project-list__link">Link to Example 3</a>
-        </div> <!-- end grid item 3 -->
-
-        <div class="project-list__item"><!-- grid item 4 -->
-          <h2>Example 4</h2>
-          <p>Example 4 description</p>
-          <a href="#" class="project-list__link">Link to Example 4</a>
-        </div> <!-- end grid item 4 -->
-      </div> <!-- END PROJECT LIST GRID -->
-
-
-    </section>
-
-
-
-    <footer class="page__footer">
-      <p>Find me on</p>
-      <div class="social-media">
-        <a target="_blank" href="https://github.com/jbsneed"><img src="img/githubicon.svg" alt="Photo of Github icon"></a>
-        <a target="_blank" href="https://www.facebook.com/juliebell14"><img src="img/facebookicon.png" alt="Photo of Facebook icon"></a>
-        <a target="_blank" href="https://www.linkedin.com/in/julie-sneed-2843a585/"><img src="img/linkediniconblack.svg" alt="Photo of LinkedIn icon"></a>
+  <!-- Main Content -->
+  <section>
+    <h1>Work</h1>
+    <div class="project-list">
+      <!--PROJECT LIST GRID -->
+      <div class="project-list__item">
+        <!--Grid item 1 -->
+        <h2>Pokedex</h2>
+        <p>This is a jQuery website that pulls data from pokeapi.co. You're
+          given a list of Pokemon by name. Once a name is clicked, you're given
+          more information about said Pokemon. </p>
+        <a href="#" class="project-list__link">View Pokedex</a>
+        <a href="https://github.com/jbsneed/Pokedex">View code</a>
       </div>
-    </footer>
+      <!--end grid item 1 -->
+
+      <div class="project-list__item">
+        <!-- grid item 2 -->
+        <h2>myFlix -- React App</h2>
+        <p>myFlix is my first app from scratch and my first project using React.
+          The backend uses Node and all my data is stored on MongoDB. User
+          accounts are authenticated and authorized using passport and JSON Web
+          Tokens.</p>
+        <a href="#" class="project-list__link">Visit myFlix</a>
+        <a href="https://github.com/jbsneed/myFlix">View code</a>
+      </div> <!-- end grid item 2 -->
+
+      <div class="project-list__item">
+        <!-- grid item 3 -->
+        <h2>Awesome Quiz -- Angular App</h2>
+        <p>My awesome quiz app was my first experiment using Angular. It allows
+          users to choose between two quizzes and answer questions from the data
+          in the corresponding JSON files. Once finished with the quiz, the user
+          will be shown their results.</p>
+        <a href="https://jbsneed.github.io/My-Awesome-Quiz/My-Awesome-Quiz/welcome"
+          class="project-list__link">Visit My-Awesome-Quiz</a>
+        <a href="https://github.com/jbsneed/My-Awesome-Quiz">View code</a>
+      </div> <!-- end grid item 3 -->
+
+      <div class=" project-list__item">
+        <!-- grid item 4 -->
+        <h2>ToDo List</h2>
+        <p>The ToDo List app was my first experience using Vue. It allows users
+          to add, edit, check off, and delete items from their list. </p>
+        <a href="#" class="project-list__link">View ToDo List app</a>
+        <a href="https://github.com/jbsneed/todo_list">View code</a>
+      </div> <!-- end grid item 4 -->
+    </div> <!-- END PROJECT LIST GRID -->
+
+
+  </section>
+
+
+
+  <footer class="page__footer">
+    <p>Find me on</p>
+    <div class="social-media">
+      <a target="_blank" href="https://github.com/jbsneed"><img
+          src="img/githubicon.svg" alt="Photo of Github icon"></a>
+      <a target="_blank" href="https://www.facebook.com/juliebell14"><img
+          src="img/facebookicon.png" alt="Photo of Facebook icon"></a>
+      <a target="_blank"
+        href="https://www.linkedin.com/in/julie-sneed-2843a585/"><img
+          src="img/linkediniconblack.svg" alt="Photo of LinkedIn icon"></a>
+    </div>
+  </footer>
 
 
   <script src="js/tota11y.min.js"></script>
-  </body>
+</body>
 
 
 </html>
