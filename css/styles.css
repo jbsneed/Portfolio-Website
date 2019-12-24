@@ -61,11 +61,6 @@ a {
   transition: .4s opacity, .4s font-size;
 }
 
-a:visited {
-  /* visited link */
-  color: var(--visited-link);
-}
-
 a:hover, a:focus {
   /* No underlining when hovering over a link */
   text-decoration: none;
