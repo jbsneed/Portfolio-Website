@@ -8,19 +8,19 @@ body{
 }
 
 .body__index {
-  background-color: #a9a9a9;
+  background-color: #29b3e7;
 }
 
 .body__about {
-  background-color: #a9a9a9;
+  background-color: #7b6ff9;
 }
 
 .body__contact {
-  background-color: #a9a9a9;
+  background-color: #24cddb;
 }
 
 .body__work{
-  background-color: #a9a9a9;
+  background-color: #7b6ff9;
 }
 
 h1 {
@@ -215,6 +215,14 @@ table{
   -ms-grid-columns: 1fr 20px 1fr;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
+}
+
+.work__screenshots{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border: solid 5px black;
 }
 
 .project-list__item{
